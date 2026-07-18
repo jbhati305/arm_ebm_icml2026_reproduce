@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "title": "Reproduction: Autoregressive Language Models are Secretly Energy-Based Models: Insights into the Lookahead Capabilities of Next-Token Prediction",
+  "emoji": "🎯",
+  "space_id": "jbhati305/repro-autoregressive-language-models-are-secretly-energy-based-models-insights-into-the-lookahea",
+  "paper": {
+    "arxiv_id": "2512.15605",
+    "openreview_id": "997oprE4sh"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-997oprE4sh"
+  ],
+  "updated_at": "2026-07-18T21:09:09+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Reproduction: Autoregressive Language Models are Secretly Energy-Based Models: Insights into the Lookahead Capabilities of Next-Token Prediction",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "executive-summary",
+        "title": "Executive summary",
+        "file": "pages/executive-summary/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-1-exact-arm-ebm-bijection-in-function-space",
+        "title": "Claim 1: Exact ARM–EBM bijection in function space",
+        "file": "pages/claim-1-exact-arm-ebm-bijection-in-function-space/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-soft-bellman-equation-and-implicit-lookahead",
+        "title": "Claim 2: Soft Bellman equation and implicit lookahead",
+        "file": "pages/claim-2-soft-bellman-equation-and-implicit-lookahead/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-3-same-nll-minima-and-optimal-teacher-forcing",
+        "title": "Claim 3: Same NLL minima and optimal teacher forcing",
+        "file": "pages/claim-3-same-nll-minima-and-optimal-teacher-forcing/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-4-ebm-to-arm-kl-error-bound",
+        "title": "Claim 4: EBM-to-ARM KL error bound",
+        "file": "pages/claim-4-ebm-to-arm-kl-error-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-5-conversion-cost-asymmetry",
+        "title": "Claim 5: Conversion-cost asymmetry",
+        "file": "pages/claim-5-conversion-cost-asymmetry/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 3292,
+  "revision": "1784408949763602478"
+}

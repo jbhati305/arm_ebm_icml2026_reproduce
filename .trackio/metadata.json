@@ -1,0 +1,41 @@
+{
+  "space_id": "jbhati305/repro-autoregressive-language-models-are-secretly-energy-based-models-insights-into-the-lookahea",
+  "emoji": "🎯",
+  "created_at": "2026-07-18T19:53:12+00:00",
+  "last_page": "conclusion",
+  "tags": [
+    "icml2026-repro",
+    "paper-997oprE4sh"
+  ],
+  "paper": {
+    "arxiv_id": "2512.15605",
+    "openreview_id": "997oprE4sh"
+  },
+  "local_path_artifacts": [
+    {
+      "path": "outputs/cpu_exact/kl_bound_trials.csv",
+      "abs_path": "/home/afs/Projects/arm_ebm_icml2026_reproduce/outputs/cpu_exact/kl_bound_trials.csv",
+      "size": 4344,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/cpu_exact/training_history.csv",
+      "abs_path": "/home/afs/Projects/arm_ebm_icml2026_reproduce/outputs/cpu_exact/training_history.csv",
+      "size": 3080,
+      "artifact_type": "dataset"
+    },
+    {
+      "path": "outputs/cpu_exact/complexity.csv",
+      "abs_path": "/home/afs/Projects/arm_ebm_icml2026_reproduce/outputs/cpu_exact/complexity.csv",
+      "size": 145,
+      "artifact_type": "dataset"
+    }
+  ],
+  "local_artifacts": [
+    "arm-ebm-icml2026-reproduction/reproduction-bundle:latest"
+  ],
+  "local_dashboards": {},
+  "artifacts_bucket": "jbhati305/arm-ebm-icml2026-artifacts",
+  "autosync": true,
+  "private": false
+}

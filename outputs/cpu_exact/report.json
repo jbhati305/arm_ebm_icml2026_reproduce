@@ -1,0 +1,87 @@
+{
+  "paper": "Autoregressive Language Models are Secretly Energy-Based Models",
+  "scope": "Exact CPU verification in function space: variable-length EOS responses for Claims 1-2 and both fixed-horizon sequence spaces from Appendix C for Claim 3; not a finite-Transformer/LLM-scale replication.",
+  "configuration": {
+    "vocab_size": 8,
+    "horizon": 4,
+    "sequences": 4096,
+    "steps": 3000,
+    "seed": 7,
+    "device": "CPU"
+  },
+  "claim_1_bijection": {
+    "setting": "Variable-length responses with EOS and maximum length T",
+    "valid_responses": 585,
+    "max_abs_log_probability_difference": 1.7763568394002505e-15,
+    "fixed_length_cross_check": 3.552713678800501e-15,
+    "passed": true
+  },
+  "claim_2_soft_bellman": {
+    "max_abs_fixed_point_residual": 6.661338147750939e-16,
+    "fixed_length_cross_check": 4.996003610813204e-16,
+    "passed": true
+  },
+  "claim_3_same_minima": {
+    "target_entropy": 5.053137334770945,
+    "analytic_ebm_gap": 0.0,
+    "analytic_arm_gap": 0.0,
+    "analytic_probability_error_v8_t4": 5.329070518200751e-15,
+    "analytic_probability_error_v4_t8": 1.5987211554602254e-14,
+    "trained_ebm_final_gap": 5.997902619014894e-09,
+    "trained_arm_final_gap": 5.530588795821245e-07,
+    "centred_arm_vs_mapped_ebm_linf": 0.007335004327232216,
+    "training_seconds": 10.004928766000376
+  },
+  "claim_4_kl_bound": {
+    "trials": 40,
+    "directions_per_trial": 2,
+    "max_kl_over_bound": 0.07152984733247113,
+    "all_bounds_hold": true
+  },
+  "claim_5_complexity": {
+    "complexity_table": [
+      {
+        "vocab_size": 8,
+        "horizon": 1,
+        "complete_sequences": 8,
+        "context_action_logits": 8
+      },
+      {
+        "vocab_size": 8,
+        "horizon": 2,
+        "complete_sequences": 64,
+        "context_action_logits": 72
+      },
+      {
+        "vocab_size": 8,
+        "horizon": 3,
+        "complete_sequences": 512,
+        "context_action_logits": 584
+      },
+      {
+        "vocab_size": 8,
+        "horizon": 4,
+        "complete_sequences": 4096,
+        "context_action_logits": 4680
+      },
+      {
+        "vocab_size": 8,
+        "horizon": 5,
+        "complete_sequences": 32768,
+        "context_action_logits": 37448
+      },
+      {
+        "vocab_size": 8,
+        "horizon": 6,
+        "complete_sequences": 262144,
+        "context_action_logits": 299592
+      }
+    ],
+    "interpretation": "Enumerating every complete sequence grows as V^T; the backwards EBM-to-ARM sweep must visit this exponentially growing tree."
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.1",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39"
+  }
+}
